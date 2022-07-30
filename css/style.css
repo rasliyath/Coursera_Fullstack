@@ -2,13 +2,18 @@
     margin:0px auto;
     padding:0px;
 }
-
+.container {
+    width: 960px;
+    max-width: 100%;
+}
 .row-content {
     margin:0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height:400px;
+    /* padding: 50px 0px 50px 0px; */
+    /* border-bottom: 1px ridge; */
+    /* min-height:400px; */
 }
+
+
 
 .footer{
     background-color: #D1C4E9;

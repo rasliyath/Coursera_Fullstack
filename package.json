@@ -1,7 +1,7 @@
 {
   "name": "con_fusion",
   "version": "1.0.0",
-  "description": "",
+  "description": "Bootstrap",
   "main": "index.html",
   "scripts": {
     "start": "npm run lite",
@@ -14,8 +14,16 @@
     "lite-server": "^2.6.1"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^5.2.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rasliyath/Coursera_Fullstack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rasliyath/Coursera_Fullstack/issues"
+  },
+  "homepage": "https://github.com/rasliyath/Coursera_Fullstack#readme"
 }
