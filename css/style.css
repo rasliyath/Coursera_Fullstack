@@ -11,6 +11,14 @@
     padding: 50px 0px 50px 0px; 
     border-bottom: 1px ridge;
     min-height:200px;
+    align-items: center;
+}
+.row-content-1 {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px; 
+    /* border-bottom: 1px ridge; */
+    min-height:200px;
+    align-items: center;
 }
 
 .footer{

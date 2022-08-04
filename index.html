@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
     <!-- CSS only -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
-
+   
 </head>
 
 <body>
@@ -50,15 +50,29 @@
 
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
+                <div class="  col-sm-6">
 
-                    <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
-                        lipsmacking creations will tickle your culinary senses!</p>
+                        <h1>Ristorante con Fusion</h1>
+                        <p>We take inspiration from the World's best cuisines, and create a unique fusion experience.
+                            Our
+                            lipsmacking creations will tickle your culinary senses!</p>
 
+                    
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
+                <div class=" col-sm-6">
+                    <div class="row row-content-1">
+                        <div class="col-sm-6">
+                            <img src="img/logo.png" class="img-fluid">
+                        </div>
+                        <br>
+                        <div class="col-sm-6  ">
+                            <div class="col-12  align-self-center"> 
+                                <a href="#reservetable" class="btn  d-block btn-warning  btn-sm" role="button" >Reserve Table</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -66,6 +80,8 @@
 
 
     <div class="container">
+
+
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3 ">
                 <h2>Our Lipsmacking Culinary Creations</h2>
@@ -80,23 +96,8 @@
                         </div>
                         <br>
                         <div class="flex-grow-1 ms-3">
-                            <h2>Uthappizza <span class="badge bg-danger">HOT</span> <span class="badge pill text-bg-secondary">$4.99</span></h2>
-                            <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian
-                                pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur
-                                chillies and Buffalo Paneer.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- visible only small screen -->
-                <div class="col-sm-12 d-block d-sm-none">
-                    <div class="d-flex flex-wrap align-items-center">
-                        <div class="flex-shrink-0 mob-w-100">
-                            <img src="img/uthappizza.png" alt="Uthappizza" class="img-fluid img-thumbnail mob-w-100">
-                        </div>
-                        <br>
-                        <div class="flex-grow-1 ms-3 mob-w-100">
-                            <h1 >Uthappizza<span class="badge bg-danger">HOT</span> <span class="badge pill text-bg-secondary">$4.99</span></h1>
+                            <h2>Uthappizza <span class="badge bg-danger">HOT</span> <span
+                                    class="badge pill text-bg-secondary">$4.99</span></h2>
                             <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian
                                 pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur
                                 chillies and Buffalo Paneer.</p>
@@ -104,11 +105,29 @@
                     </div>
                 </div>
             </div>
+            <!-- visible only small screen -->
+            <div class="col-sm-12 d-block d-sm-none">
+                <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0 ">
+                        <img src="img/uthappizza.png" alt="Uthappizza" class="img-fluid img-thumbnail mob-w-100">
+                    </div>
+                    <br>
+                    <div class="flex-grow-1 ms-3 mob-w-100">
+                        <h1>Uthappizza<span class="badge bg-danger">HOT</span> <span
+                                class="badge pill text-bg-secondary">$4.99</span></h1>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian
+                            pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur
+                            chillies and Buffalo Paneer.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
-                <!-- in bootstrap 4 code like this....for media obect -->
-                   <!-- <div class="media">
+
+
+        <!-- in bootstrap 4 code like this....for media obect -->
+        <!-- <div class="media">
                         <img class="d-flex mr-3 img-thumbnail align-self-center"
                             src="img/uthappizza.png" alt="Uthappizza">
                         <div class="media-body">
@@ -125,13 +144,36 @@
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm order-sm-first col-md">
+            <div class="col col-sm col-md">
+                <div class="d-flex align-items-center">
+                    <div class="flex-grow-1 ms-3 ">
+                        <h2>Weekend Grand Buffet <span class="badge bg-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block"> Featuring mouthwatering combinations with a choice of five
+                            different salads, six enticing appetizers,
+                            six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for
+                            just
+                            $19.99 per person </p>
+                    </div>
+                    <br>
+                    <div class="flex-shrink-0">
+                        <img src="img/buffet.png" alt="Alberto Somayya" class="img-fluid img-thumbnail">
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- <div class="col col-sm  col-md">
                 <h2>Weekend Grand Buffet</h2>
                 <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers,
                     six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just
                     $19.99 per person </p>
-            </div>
+            </div> -->
         </div>
+
+
+
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h2>Meet our Culinary Specialists</h2>
@@ -154,17 +196,17 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- visible only small screen -->
                 <div class="col-sm-12 d-block d-sm-none">
-                    <div class="d-flex flex-wrap ">
-                        <div class="flex-shrink-0 mob-w-100">
+                    <div class="d-flex  ">
+                        <div class="flex-shrink-0 ">
                             <img src="img/alberto.png" alt="Alberto Somayya" class="img-fluid img-thumbnail mob-w-100 ">
                         </div>
                         <br>
                         <div class="flex-grow-1 ms-3 ">
-                            <h2 class="font-weight-bold" >Alberto Somayya....</h2>
-                            <h4 >Executive Chef...</h4>
+                            <h2 class="font-weight-bold">Alberto Somayya</h2>
+                            <h4>Executive Chef</h4>
                             <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
                                 International experience having worked closely with
                                 whos-who in the culinary world, he specializes in
@@ -174,7 +216,87 @@
                 </div>
             </div>
         </div>
+        <div class="row row-content align-items-center">
+
+            <div class="col-1 ">
+
+            </div>
+            <div class="col-10  col-sm-8">
+                <div class="card ">
+                    <h3 class="card-header bg-warning text-white">Reaserve a Table</h3>
+                    <div class="card-body">
+                        <form id="reservetable">
+                            <div class="form-group row">
+                                <label for="numberofguests" class="col-md-2 col-form-label">Number of Guests</label>
+                                <div class="col-md-10">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">6</label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group row">
+                                <label for="firstname" class="col-md-2 col-form-label">Date and Time</label>
+                                <div class="col-12 col-sm-3">
+                                    <input type="text" class="form-control " id="date" name="date" placeholder="Date">
+                                </div>
+                                <div class="col-12 col-sm-3 ">
+                                    <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                </div>
+                                <!-- <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                            <input type="text" class="form-control" id="time" name="time" placeholder="Time"> -->
+
+                            </div>
+                            <br>
+
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-10">
+                                    <button type="submit" class="btn btn-primary">Reaserve</button>
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+                </form>
+            </div>
+            <div class="col-1">
+
+            </div>
+        </div>
+
     </div>
+
+
 
 
 
@@ -215,7 +337,9 @@
                                 class="fa fa-twitter"></i></a>
                         <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
                                 class="fa fa-youtube"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i>
+                           
+                        </a>
                     </div>
                 </div>
             </div>
