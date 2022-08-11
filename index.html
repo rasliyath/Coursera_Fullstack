@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
     <!-- CSS only -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
@@ -122,29 +126,49 @@
                         </div>
                         <br>
                         <div class="col-sm-6  ">
-                            <div class="col-12  align-self-center">
+                            <!-- <button class="btn btn-block btn-warning" id="reservetablemodalbtn">Reserve Table</button> -->
+                            <!-- <div class="col-12  align-self-center">
                                 <span>
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal2"
                                         class="btn  btn-block btn-warning">
                                         Reserve Table</a>
-                                </span>
-                                <!-- <a role="tooltip"  class="btn  btn-block nav-link btn-warning " 
+                                </span> -->
+                            <!-- <a role="tooltip"  class="btn  btn-block nav-link btn-warning " 
                                     data-bs-toggle="tooltip" data-bs-html="true"  
                                     title="Or Call us at  <br><strong>+852 12345678</strong>";
                                     data-bs-placement="bottom" href="#reservetable">Reserve Table</a> -->
-
-                            </div>
-
-
-
+                            <button id="btnShow" type="button" class="btn btn-primary">Modal</button>
 
                         </div>
-                    </div>
 
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="modal fade" tabindex="-1" id="testModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="btnclose">Close</button>
+                    <button type="button" class="btn btn-primary" id="btnSave">Save</button>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -320,7 +344,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                      <!-- play and pause in one button -->
+                    <!-- play and pause in one button -->
                     <button class="btn btn-danger btn-sm" id="carouselButton">
                         <span id="carousel-button-icon" class="fa fa-pause"></span>
                     </button>
@@ -539,7 +563,7 @@
             </footer>
 
             <!-- Bootstrap Bundle with jquery -->
-            <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+            <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 
             <!-- JavaScript;  -->
             <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -548,6 +572,9 @@
             <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
 
             <script src="./node_modules//bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
             <!-- <script>
         
@@ -586,11 +613,93 @@
                             $("#carouselButton").children("span").addClass('fa-pause');
                         }
                     });
+                    $(".btnShow").click(function () {
+                        $("#testModal").modal('show');
+                    });
+                    $(".btnclose").click(function () {
+                        $("#testModal").modal('hide');
+                    });
+                    $("#loginbutton").click(function () {
+                        $("#loginModal").modal('show');
+                    });
+                    $(".close").click(function () {
+                        $("#loginModal").modal('hide');
+                    });
                 });
             </script>
+            <!-- <script>
+                $(document).ready(function () {
+                    $("#reservetablemodalbtn").click(function () {
+                        $('#exampleModal2').modal({ show: true });
+                    });
+                });
+            </script> -->
+
+            <!-- <script>
+                $(document).ready(function () {
+                    $("#reservetablemodalbtn").click(function () {
+                        $('#myModal').modal({ show: true });
+                    });
+                    $("#btnclose1").click(function () {
+                        $('#myModal').modal('hide');
+                    });
+                    $("#btnclose2").click(function () {
+                        $('#myModal').modal('hide');
+                    });
+                });
+            </script> -->
+            <!-- <script>
+                var myModal = document.getElementById('myModal')
+                var myInput = document.getElementById('myInput')
+
+                myModal.addEventListener('shown.bs.modal', function () {
+                    myInput.focus()
+                })
+            </script>
+
+            <script>
+                $(document).ready(function () {
+                    $("#myBtn").click(function () {
+                        $('#myModal').modal({ show: true });
+                    });
+                    $("#btnclose1").click(function () {
+                        $('#myModal').modal('hide');
+                    });
+                    $("#btnclose2").click(function () {
+                        $('#myModal').modal('hide');
+                    });
+                });
+            </script> -->
+
+            <script type="text/javascript">
+
+                window.onload = function () {
+                    document.getElementById("btnShow").addEventListener("click", function () {
+                        const container = document.getElementById("testModal");
+                        const modal = new bootstrap.Modal(container);
+                        modal.show();
+                    });
+                    // document.getElementById("btnSave").addEventListener("click", function () {
+                    //     const container = document.getElementById("testModal");
+                    //     const modal = new bootstrap.Modal(container);
+                    //     modal.hide();
+                    // });
+
+                    // document.getElementById("btnclose").addEventListener("click",function(){
+                    //     const container =document.getElementById("testModal");
+                    //     const modal =new bootstrap.Modal(container);
+                    //     modal.hide();
+                    // });
 
 
-
+                };
+                $('#testModal').on('hide.bs.modal', function () {
+                    return false;
+                });
+                // var modalInstance = new bootstrap.Modal(document.getElementById('testModal'));
+                // var modal = document.getElementById('btnclose');
+                // modalInstance.hide(modal);
+            </script>
 
             <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
             <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> -->
